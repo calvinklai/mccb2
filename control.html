@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><title>Project Implicit</title>
+
+<style type="text/css">
+
+body {background-color: #ffffff;}
+
+td {font-family:arial;font-size:18px}
+
+.heading {font-size: 18px;font-weight:bold;text-decoration: underline;}
+
+.dropdown {font-family:arial;font-size: 18px;}
+
+.smalltext {font-family:arial;font-size: 12px;}
+
+.medtext {font-family:arial;font-size: 18px;}
+
+</style>
+
+
+
+<script language="JavaScript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
+<script type="text/javascript">
+ function ValidateForm()
+{ 
+	if (document.form1.alerts.value=="one") {
+		document.form1.submit();
+	} else if(document.form1.reason1.value.length<2 || document.form1.reason2.value.length<2 || document.form1.reason3.value.length<2 || document.form1.reason4.value.length<2 || document.form1.reason5.value.length<2) {
+		alert("Please write five reasons about why you think academic freedom could potentially strengthen the United States.");
+		document.form1.alerts.value="one";
+	}        else document.form1.submit();
+  }
+</script>
+</head>
+
+
+
+<body>
+
+
+<br><br>
+<form method="post" action="/implicit/Study" name="form1" onSubmit="return replacetextareaenters();">
+<input type="hidden" name="mode" value="insQuesData" />
+<input type="hidden" name="alerts" value="none" />
+<input type="hidden" name="condition" value="control"/>
+
+<div  id='ins1' style='display:block'>
+
+ 
+ 
+ <table align="center"width="800px">
+
+ <tr>
+   <td><p><span class="style3">
+     <p> Please read the following statement carefully and  consider its implications. Afterward, you will be asked to briefly describe the main points. </p>
+     <p><em>Many sociologists, psychologists, economists, and political scientists agree that protecting academic freedom should be a vital priority for the </em><em>United States. Our colleges and universities provide many of the creative sparks that stoke the engines of our productivity, and academic freedom sustains the hearts of these institutions. True academic freedom is not contingent on the popularity of a given idea; faculty and students must be free to question, study, speak, and create even when their ideas and conclusions run counter to majority beliefs. This is fundamental to American ideals. In stressful times especially, we must make every effort to hold in our minds the complexity of what we say we believe. The primary purpose of our universities is preserving and advancing our understanding of life, the world, and the universe -- of discovering truth. If the U.S. is to maximize its human potential and remain a leader among nations, such discovery is crucial.</em></p>
+
+     <br/>
+     
+     <p>In the boxes below, please list 5 reasons why you think academic freedom could potentially strengthen the United States.</p>
+       
+	   <p>Reason 1</p>
+       <textarea name="reason1" rows=3 cols=120> </textarea> 
+   	   <p>Reason 2</p>
+	   <textarea name="reason2" rows=3 cols=120> </textarea> 
+   	   <p>Reason 3</p>
+	   <textarea name="reason3" rows=3 cols=120> </textarea> 
+	   <p>Reason 4</p>
+	   <textarea name="reason4" rows=3 cols=120> </textarea> 
+	   <p>Reason 5</p>
+	   <textarea name="reason5" rows=3 cols=120> </textarea> 
+       <br/> 
+       
+       
+       <br/><br/>
+	      <button type="button" onclick="return ValidateForm()">Continue</button>
+     </span></p>
+</td></tr>
+
+</table>
+
+</div>
+
+
+
+
+<div style="display:none">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
+</div>
+
+
+ 
+
+</form>
+</body>
+
+</html>

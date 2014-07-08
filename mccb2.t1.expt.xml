@@ -1,0 +1,62 @@
+<Study id="calvin.mccb1.t1" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent_t1.html</Task>
+		<Task id="realstart">realstartskip.htm</Task>
+		<Task id="lastpage">lastpage.html</Task> 
+		<Task id="iatc" file="racec.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
+		<Task id="iatd" file="raced.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
+		<Task id="questionnaire">questionnaire.jsp</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
+		<Task id="serial">serial_t1.html</Task>		
+		<Task id="sendemail">sendemail.jsp</Task>
+
+		<!--Multiculturalism Prime-->
+		<Task id="mc">mc_5reasons.html</Task>
+		<Task id="mc_inst">mc_5reasons.html</Task>
+
+		<!--Evaluative Instructions-->
+		<Task id="eval_inst">evalinst.html</Task>
+	
+		<!--Control-->
+		<Task id="control">control.html</Task>
+		
+		<!-- Instructions -->
+		<Task id="instructions">instructions.html</Task>
+	
+	</Definitions>
+	
+	<Map>
+		<Task id="startpage"/>
+		<Task id="consent"/>	
+		<Task id="realstart"/>
+		
+		<Branch type ="group" select="1" id="condition">
+			<Branch type="group" id="controlgroup">
+				<Task id="control"/>	
+			</Branch>
+			<Branch type="group" id="mcgroup">
+				<Task id="mc"/>	
+			</Branch>			
+			<Branch type="group" id="mcinstgroup">
+				<Task id="mc_inst"/>
+				<Task id="eval_inst"/>
+			</Branch>
+		</Branch>			
+		
+		<Branch type="group" id="iatpack">
+			<Task id="instructions"/>
+			<Branch type="group" select="1" id="random">
+				<Task id="iatc"/>
+				<Task id="iatd"/>
+			</Branch>
+		</Branch>	
+
+		<Task id="questionnaire"/>			
+		<Task id="serial"/>
+		<Task id="sendemail"/>
+		<Task id="lastpage"/>	
+		<Task id="debriefing"/>		
+	</Map>
+</Study>
