@@ -1,4 +1,4 @@
-<Study id="calvin.mccb2.t1" datagroup="research"> 
+<Study id="calvin.mccb2.t1.v2" datagroup="research"> 
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
@@ -13,14 +13,18 @@
 		<Task id="sendemail">sendemail.jsp</Task>
 
 		<!--Multiculturalism Prime-->
-		<Task id="mc">mc_5reasons.html</Task>
-		<Task id="mc_inst">mc_5reasons.html</Task>
+		<Task id="mc">mc.html</Task>
+		<Task id="mc_reason">mc_reason.html</Task>
 
-		<!--Evaluative Instructions-->
-		<Task id="eval_inst">evalinst.html</Task>
+
+		<!--Multiculturalism Prime w/ Evaluative Instructions-->
+		<Task id="mcinst">mcinst.html</Task>
+		<Task id="mcinst_reason">mc_reason.html</Task>
+		<Task id="evalinst">evalinst.html</Task>
 	
 		<!--Control-->
 		<Task id="control">control.html</Task>
+		<Task id="control_reason">control_reason.html</Task>	
 		
 		<!-- Instructions -->
 		<Task id="instructions">instructions.html</Task>
@@ -35,13 +39,16 @@
 		<Branch type ="group" select="1" id="condition">
 			<Branch type="group" id="controlgroup">
 				<Task id="control"/>	
+				<Task id="control_reason"/>
 			</Branch>
 			<Branch type="group" id="mcgroup">
 				<Task id="mc"/>	
+				<Task id="control_reason"/>
 			</Branch>			
 			<Branch type="group" id="mcinstgroup">
-				<Task id="mc_inst"/>
-				<Task id="eval_inst"/>
+				<Task id="mcinst"/>
+				<Task id="mcinst_reason"/>
+				<Task id="evalinst"/>
 			</Branch>
 		</Branch>			
 		

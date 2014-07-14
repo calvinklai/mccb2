@@ -1,4 +1,4 @@
-<Study id="calvin.mccb2.t2" datagroup="research"> 
+<Study id="calvin.mccb2.t2.v2" datagroup="research"> 
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>

@@ -28,8 +28,8 @@ td {font-family:arial;font-size:18px}
 { 
 	if (document.form1.alerts.value=="one") {
 		document.form1.submit();
-	} else if(document.form1.reason1.value.length<2 || document.form1.reason2.value.length<2 || document.form1.reason3.value.length<2 || document.form1.reason4.value.length<2 || document.form1.reason5.value.length<2) {
-		alert("Please write five reasons about why you think the multicultural approach could potentially strengthen the United States.");
+	} else if(document.form1.summarize.value.length<24) {
+		alert("Please write a sentence or two that summarizes the main points of the statement.");
 		document.form1.alerts.value="one";
 	}        else document.form1.submit();
   }
@@ -60,18 +60,9 @@ td {font-family:arial;font-size:18px}
      <p><em>Understanding both the similarities and  differences among ethnic groups is an essential component of long-term  social harmony in the United States, and recognizing the unique social  characteristics of each cultural or ethnic group will lead to smoother  interactions between people. </em></p>
      <br/>
      
-     <p>In the boxes below, please list 5 reasons why you think this multicultural approach could potentially strengthen the United States.</p>
-       
-	   <p>Reason 1</p>
-       <textarea name="reason1" rows=3 cols=120> </textarea> 
-   	   <p>Reason 2</p>
-	   <textarea name="reason2" rows=3 cols=120> </textarea> 
-   	   <p>Reason 3</p>
-	   <textarea name="reason3" rows=3 cols=120> </textarea> 
-	   <p>Reason 4</p>
-	   <textarea name="reason4" rows=3 cols=120> </textarea> 
-	   <p>Reason 5</p>
-	   <textarea name="reason5" rows=3 cols=120> </textarea> 
+     <p>In the box below, please write a sentence or two that summarizes the main points of the statement.</p>
+
+       <textarea name="summarize" rows=3 cols=120> </textarea> 
        <br/> 
        
        
