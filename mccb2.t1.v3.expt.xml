@@ -1,4 +1,4 @@
-<Study id="calvin.mccb2.t1.v2" datagroup="research"> 
+<Study id="calvin.mccb2.t1.v3" datagroup="research"> 
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
@@ -8,6 +8,7 @@
 		<Task id="racec" file="racec.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
 		<Task id="raced" file="raced.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
+		<Task id="intro">intro.html</Task>		
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>		
 		<Task id="sendemail">sendemail.jsp</Task>
@@ -15,7 +16,6 @@
 		<!--Multiculturalism Prime-->
 		<Task id="mc">mc.html</Task>
 		<Task id="mc_reason">mc_reason.html</Task>
-
 
 		<!--Multiculturalism Prime w/ Evaluative Instructions-->
 		<Task id="mcinst">mcinst.html</Task>
@@ -35,6 +35,7 @@
 		<Task id="startpage"/>
 		<Task id="consent"/>	
 		<Task id="realstart"/>
+		<Task id="intro"/>	
 		
 		<Branch type ="group" select="1" id="condition">
 			<Branch type="group" id="controlgroup">
@@ -43,7 +44,7 @@
 			</Branch>
 			<Branch type="group" id="mcgroup">
 				<Task id="mc"/>	
-				<Task id="control_reason"/>
+				<Task id="mc_reason"/>
 			</Branch>			
 			<Branch type="group" id="mcinstgroup">
 				<Task id="mcinst"/>
